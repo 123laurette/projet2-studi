@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" charset="uth-8"></script>
+    <title>Projet2-STUDI</title>
+</head>
+<body>
+    <main>
+        <div class="bcgGris"></div>
+        <h1 class="newGame" onclick="resetGame()">
+            <img src="assets/iconePlus.png" alt="symbole plus"/>
+            <p>NEW GAME</p>
+        </h1>
+        <div class="containerJeu">
+
+            <section class="containerPlayer player1 active">
+                <h2 class="player">
+                    PLAYER 1 <img src="assets/rondRouge.png" class="activeIndicateur player1Indicateur" />
+                </h2>
+                <div class="global">0</div>
+                <div class="current">CURRENT<span>0</span></div>
+            </section>
+
+            <section class="milieu">
+                <div class="des">
+                    <img src="assets/des1.png" id="des0" alt="dés1" class="newdes">
+                </div>
+                <div class="rollHold roll " onclick="rollDice()">
+                    <img class="flecheCercle"src="assets/flecheRotative.svg"  alt="">
+                    <p class="btn" >ROLL DICE</p>
+                </div>
+                <div class="rollHold hold">
+                    <img class="flecheCarre"src="assets/flecheCarre.png"  alt="">
+                    <p class="btn" onclick="hold()">HOLD</p>
+                </div>
+                
+            </section>
+
+            <section class="containerPlayer player2">
+                <h2 class="player">
+                    PLAYER 2 <img src="assets/rondRouge.png" class="activeIndicateur player2Indicateur"/>
+                </h2>
+                <div class="global">0</div>
+                <div class="current">CURRENT<span>0</span></div>
+            </section>
+        
+    </main>
+</body>
+</html>
